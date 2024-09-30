@@ -33,9 +33,12 @@ public class MyClassBigO {
 }
 
 // O(n^2) is the total time complexity of the code. 
-// The code has two nested loops, each iterating over the length of the string and checking associated conditions. 
-// The outer loop runs n times, where n is the length of the string. For each iteration of the outer loop, the inner loop runs i times, where i is the current index of the outer loop. 
-// The StringBuilder operations (append and indexOf) are considered constant time operations, O(1), as they are performed in a single step. 
-// The if-else statement is a constant time operation, O(1), as it is executed in a single step. 
-// The println statement is a constant time operation, O(1), as it is executed in a single step. 
-// Therefore, the overall time complexity of the code is O(n^2), as the nested loops dominate the time complexity and the other constant time operations are negligible in comparison.
+// The code has a nested for loop within a for loop. 
+// The first for loop iterates over the length of the input string and assigns the character at the current index 'i' to the character type variable 'c', as well as initializes a boolean type variable 'd' to false. 
+// The initalization of the boolean type variable 'd' is constant time, O(1) as well as the assignment of the character type variable 'c' to the character at the current index 'i' of the first for loop. 
+// The outer loop runs n times, where n is the length of the input string. 
+// For each iteration of the inner loop, the inner loop runs i times, where j is the current index of the outer loop that is incrementing until it reaches the length of the input string. 
+// The StringBuilder operations (append and indexOf) are considered constant time operations, O(1).  
+// The if and else statements are constant time operations, O(1).
+// The println statement is a constant time operation, O(1).
+// Therefore, the overall time complexity of the code is O(n^2), as the nested loops are the deciding factor in the time complexity and the other constant time operations are negligible in comparison and therefore are not considered in the overall time complexity because of the lack of significance.
