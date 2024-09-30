@@ -29,4 +29,9 @@ public class MyClassCodeAnalysis {
     }
 }
 
-// The 
+// The provided code is a Java program that iterates through a given string with an inital for loop, assigns the character at the current index 'i' to the character type variable 'c', as well as initializes a boolean type variable 'd' to false. 
+// The provided code then has a nested for loop that iterates through the string up to the current index 'i' of the outer loop, checking if the character at the current index 'j' is the same as the character at the current index 'i' of the outer loop. This inner loop checks for duplicate characters in the string up to the current index 'i' of the outer loop.
+// If the character at the current index 'j' is the same as the character at the current index 'i' of the outer loop, the boolean type variable 'd' is set to true and the inner loop breaks. Moving onto the if statement to determine if the character that has been identified as a duplicate is not already in the StringBuilder 'b'. 
+// If it is not in the StringBuilder 'b', the character at the current index 'i' of the outer loop is appended to the StringBuilder 'b' and then a space " " is appended after it
+// If it is already in the StringBuilder 'b', the current character is not appended to the StringBuilder 'b'.
+// After the outer loop has finished the code checks if the StringBuilder 'b' has a length of 0. If it does, the code outputs "Say something 1...." to the console. Else the StringBuilder 'b' has a length greater than 0, the code outputs "characters found: " and the characters in the StringBuilder 'b' with a space " " after each character to the console.
