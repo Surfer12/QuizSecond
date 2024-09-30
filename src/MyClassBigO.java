@@ -12,17 +12,17 @@ public class MyClassBigO {
             char c = a.charAt(i); // O(1)
             boolean d = false; // O(1)
 
-            for (int j = 0; j < i; j++) { // O(n)
+            for (int j = 0; j < i; j++) { // O(i)
                 if (a.charAt(j) == c) {
                     d = true;
                     break; 
                 }
-            } // O(n^2)
+            } 
 
             if (d && b.indexOf(String.valueOf(c)) == -1) { // O(1)
                 b.append(c).append(" "); // O(1)
             }
-        } // O(n^2)
+        } 
 
         if (b.length() == 0) { // O(1)
             System.out.println("Say something 1...."); // O(1)
@@ -34,7 +34,7 @@ public class MyClassBigO {
 
 // O(n^2) is the total time complexity of the code. 
 // The code has two nested loops, each iterating over the length of the string and checking associated conditions. 
-// The outer loop runs n times, where n is the length of the string. For each iteration of the outer loop, the inner loop runs n times, where n is the current index of the outer loop. 
+// The outer loop runs n times, where n is the length of the string. For each iteration of the outer loop, the inner loop runs i times, where i is the current index of the outer loop. 
 // The StringBuilder operations (append and indexOf) are considered constant time operations, O(1), as they are performed in a single step. 
 // The if-else statement is a constant time operation, O(1), as it is executed in a single step. 
 // The println statement is a constant time operation, O(1), as it is executed in a single step. 
