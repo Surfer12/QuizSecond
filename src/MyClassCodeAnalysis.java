@@ -29,9 +29,16 @@ public class MyClassCodeAnalysis {
     }
 }
 
-// The provided code is a Java program that iterates through a given string with an inital for loop, assigns the character at the current index 'i' to the character type variable 'c', as well as initializes a boolean type variable 'd' to false. 
-// The provided code then has a nested for loop that iterates through the string up to the current index 'i' of the outer loop, checking if the character at the current index 'j' is the same as the character at the current index 'i' of the outer loop. This inner loop checks for duplicate characters in the string up to the current index 'i' of the outer loop.
-// If the character at the current index 'j' is the same as the character at the current index 'i' of the outer loop, the boolean type variable 'd' is set to true and the inner loop breaks. Moving onto the if statement to determine if the character that has been identified as a duplicate is not already in the StringBuilder 'b'. 
-// If it is not in the StringBuilder 'b', the character at the current index 'i' of the outer loop is appended to the StringBuilder 'b' and then a space " " is appended after it
-// If it is already in the StringBuilder 'b', the current character is not appended to the StringBuilder 'b'.
-// After the outer loop has finished the code checks if the StringBuilder 'b' has a length of 0. If it does, the code outputs "Say something 1...." to the console. Else the StringBuilder 'b' has a length greater than 0, the code outputs "characters found: " and the characters in the StringBuilder 'b' with a space " " after each character to the console.
+// This program looks through a given string and outputs either "Say something 1...." if the StringBuilder 'b' has a length of 0, or "characters found: " and the assocaited characters of the String Builder 'b'.
+// The String Builder 'b' is used to store the characters that have appeared more than once as duplicate characters in the given string, though only the first instance of identification of the duplicate character is stored in the StringBuilder 'b'. Multiple occurrences of the same character will not be stored in the StringBuilder 'b'.
+// This program identifies duplicate characters in a given string and isolates the duplicate characters into the StringBuilder 'b'
+// The program then checks if the character is already in the StringBuilder 'b' using the (d && indexOf(String.valueOf(c)) == -1) method to determine if the character is already in the StringBuilder 'b' or not.
+// If the character is not in the StringBuilder 'b', then we append the character to the StringBuilder 'b' and then append a space " " after it. 
+// Finally, we check if the StringBuilder 'b' has a length of 0, and if it does, we output "Say something 1....", and if it doesn't, we output "characters found: " and the characters in the StringBuilder 'b' with a space " " after each character.
+
+
+
+
+
+
+
