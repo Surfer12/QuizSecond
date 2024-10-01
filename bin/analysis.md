@@ -1,11 +1,10 @@
-```markdown
 # Analysis of `src/MyClassReWorded.java`
 
 The `MyClassReWorded` Java program processes a given input string to identify and display duplicate characters. Below is a detailed analysis of the program, including comments, insights into its functionality, and time complexity at each step.
 
 ## Source Code
 
-```java:src/MyClassReWorded.java
+```java
 public class MyClassReWorded {
     public static void main(String[] args) {
         String inputString = "Hello, world!"; 
